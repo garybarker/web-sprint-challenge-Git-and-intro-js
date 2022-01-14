@@ -245,6 +245,7 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array) {
   /*Your Code Here*/
+  
 }
 
 
@@ -326,11 +327,13 @@ For example artistInfo(artists, 'Frida Kahlo') will return:
 */
 function artistInfo(array, name){
   /*Your Code Here*/
+  const newArray = [];
   for(let i = 0; i < array.length; i++){
     if(array[i].name === name){
-      return array[i].bio;
+      newArray.push(array[i].bio);
     }
   }
+  return newArray;
 }
 
 
