@@ -245,7 +245,14 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(array) {
   /*Your Code Here*/
-  
+  const newArray = [];
+  for(let i = 0; i < array.length; i++){
+    const yearsArray = array[i]['years'].split(" - ");
+    if(yearsArray[0] >= '1900' && yearsArray[1] <= '2000'){
+      newArray.push(array[i].name);
+    }
+  }
+  return newArray;
 }
 
 
